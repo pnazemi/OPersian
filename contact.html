@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
+  <nav>
+  <ul>
+    <li><a href="index.html">خانه</a></li>
+    <li><a href="about.html">درباره ما</a></li>
+    <li><a href="contact.html">تماس و تبلیغات</a></li>
+  </ul>
+</nav>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>تماس و تبلیغات | OPersian</title>
@@ -21,6 +29,30 @@
     }
     a { color: #800000; text-decoration: none; }
     ul { padding-right: 1.5rem; }
+    nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: #800000;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #800000;
+}
+
   </style>
 </head>
 <body>
