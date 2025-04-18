@@ -13,23 +13,82 @@
       margin: 0;
       padding: 2rem;
     }
+
     header {
       background: #800000;
       color: white;
       padding: 1rem;
       border-radius: 8px;
     }
-    a { color: #800000; text-decoration: none; }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+    }
+
+    nav li {
+      display: inline;
+    }
+
+    nav a {
+      color: #800000;
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #800000;
+    }
+
+    main {
+      margin-top: 2rem;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: gray;
+    }
+
+    a {
+      color: #800000;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>درباره ما</h1>
-    <p><a href="index.html">بازگشت به صفحه اصلی</a></p>
+    <h1>OPersian | اتاوا به فارسی</h1>
+    <p>درباره‌ی ما و مسیر این رسانه</p>
   </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="about.html">درباره ما</a></li>
+      <li><a href="contact.html">تماس و تبلیغات</a></li>
+    </ul>
+  </nav>
+
   <main>
-    <p>OPersian 
-     نگاهی به داستان ها و رویدادهای اتاوا و کانادا به زبان فارسی از دید خبرنگاری است که این روزها ساکن این شهر است. </p>
+    <p>
+      OPersian تلاشی است مستقل برای روایت زندگی، فرهنگ، سیاست و رویدادهای روز در اتاوا از نگاه یک روزنامه‌نگار فارسی‌زبان که اکنون در این شهر زندگی می‌کند.
+    </p>
+    <p>
+      هدف ما ساده است: ایجاد پلی میان جامعه‌ی مهاجر و فضای فرهنگی-اجتماعی کانادا، به زبان مادری.
+    </p>
+    <p>
+      در این رسانه، داستان‌های شهری، مصاحبه با چهره‌ها، معرفی رویدادها و گزارش‌های خبری با زبان فارسی برای مخاطبان ساکن اتاوا و سراسر کانادا منتشر می‌شود.
+    </p>
   </main>
+
+  <footer>
+    © 2025 OPersian
+  </footer>
 </body>
 </html>
