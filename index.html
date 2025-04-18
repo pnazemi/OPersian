@@ -13,51 +13,68 @@
       margin: 0;
       padding: 2rem;
     }
-
     header {
-      background: #800000;
-      color: white;
-      padding: 1rem;
-      border-radius: 8px;
+      text-align: center;
+      margin-bottom: 2rem;
     }
-
+    header img {
+      max-width: 220px;
+      height: auto;
+    }
     nav ul {
       list-style: none;
       padding: 0;
       margin-top: 1rem;
       display: flex;
       gap: 1rem;
-      justify-content: flex-end;
+      justify-content: center;
     }
-
     nav li {
       display: inline;
     }
-
     nav a {
       color: #800000;
       font-weight: bold;
       text-decoration: none;
       border-bottom: 2px solid transparent;
     }
-
     nav a:hover {
       border-bottom: 2px solid #800000;
     }
-
-    main {
-      margin-top: 2rem;
+    section {
+      margin: 3rem 0;
     }
-
+    .post-grid, .category-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-evenly;
+    }
+    .post, .cat {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .post img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
     footer {
       margin-top: 4rem;
       font-size: 0.9rem;
       color: gray;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="photo_3_2025-03-30_09-21-12.jpg" alt="OPersian logo">
     <h1>OPersian | اتاوا به فارسی</h1>
     <p>داستان‌ها، فرهنگ، هنر، سیاست و زندگی روزمره در اتاوا، به زبان فارسی</p>
   </header>
@@ -70,14 +87,38 @@
     </ul>
   </nav>
 
-  <main>
-    <h2>به زودی...</h2>
-    <p>نسخه وب‌سایت اتاوا به فارسی در حال ساخت است. در اینجا اخبار، رویدادها، و داستان‌های مرتبط با جامعه فارسی‌زبان اتاوا را پوشش خواهیم داد.</p>
-    <p>برای پیگیری مطالب روزانه ما را در اینستاگرام دنبال کنید: <a href="https://instagram.com/opersian" target="_blank">@opersian</a></p>
-  </main>
+  <section id="welcome">
+    <h2>اتصال جامعه فارسی‌زبان به زندگی شهری اتاوا</h2>
+    <p>از خبر تا فرهنگ، از داستان تا تحلیل، اینجا خانه‌ی شماست.</p>
+  </section>
+
+  <section id="latest">
+    <h2>آخرین پست‌ها</h2>
+    <div class="post-grid">
+      <div class="post">
+        <img src="posts/image1.jpg" alt="post title">
+        <h3><a href="#">عنوان پست نمونه</a></h3>
+        <p>خلاصه‌ای از متن پست به عنوان نمونه جهت نمایش...</p>
+      </div>
+      <div class="post">
+        <img src="posts/image2.jpg" alt="post title">
+        <h3><a href="#">عنوان دوم</a></h3>
+        <p>نمونه‌ای دیگر از پست با تصویر و توضیح کوتاه.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories">
+    <h2>مطالب ما در سه بخش اصلی</h2>
+    <div class="category-grid">
+      <div class="cat"><a href="#">📰 اخبار</a></div>
+      <div class="cat"><a href="#">🎨 فرهنگ و هنر</a></div>
+      <div class="cat"><a href="#">🏙️ زندگی در اتاوا</a></div>
+    </div>
+  </section>
 
   <footer>
-    © 2025 OPersian
+    © 2025 OPersian | ساخته شده با عشق در اتاوا
   </footer>
 </body>
 </html>
